@@ -329,9 +329,9 @@ def main():
 
         st.subheader("📋 詳細表")
         display_df = final_filtered_df[["オーダー日", "カテゴリ", "サブカテゴリ", "商品", "売上"]].copy()
-        styled_df = display_df.style.background_gradient(cmap='Blues', subset=['売上']).format({'売上': '{:,.0f} 円'})
+        # styled_df = display_df.style.background_gradient(cmap='Blues', subset=['売上']).format({'売上': '{:,.0f} 円'})
         
-        st.dataframe(styled_df, hide_index=True, height=600)
+        st.dataframe(display_df, hide_index=True, height=600)
         
         # 下部の余白
         st.html("<div style='height:1000px;'></div>")
