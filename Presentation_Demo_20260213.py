@@ -159,7 +159,7 @@ def draw_bar_chart(df, interactive_mode, use_expander):
 
 # --- 3. メイン画面の構築 ---
 def main():
-    st.set_page_config(page_title="Streamlit Sales Dashboard", layout="wide")
+    st.set_page_config(page_title="Streamlit_Demo_wang", layout="wide")
     
     # データの読み込み
     df = generate_sample_data()
